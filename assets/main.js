@@ -69,7 +69,7 @@ var findUv = function(lat, lon) {
 };
 
 var findForecast = function(lat, lon) {
-  fetch(`http://api.openweathermap.org/data/2.5/onecall?appid=${APIkey}&exclude=hourly,minutely,alert&lat=${lat}&lon=${lon}&units=imperial`)
+  fetch(`https://api.openweathermap.org/data/2.5/onecall?appid=${APIkey}&exclude=hourly,minutely,alert&lat=${lat}&lon=${lon}&units=imperial`)
   .then(results => {
     return results.json()
   })

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/stylesheets/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-primary p-5 mb-5">
+      <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="input-group mb-5">
+        <input
+          id="searchTerm"
+          type="text"
+          class="form-control"
+          placeholder="City Name"
+        />
+        <button id="searchBtn" class="btn btn-outline-success" type="button">
+          Enter
+        </button>
+      </div>
+
+      <div class="card"> 
+        <div class="card-body bg-primary">
+          <h4 class="card-title">City</h4>
+          <p class="card-text city"></p>
+        </div>
+      </div> 
+      <div class="card">
+        <div class="card-body bg-primary">
+          <h4 class="card-title">Weather</h4>
+          <p class="card-text cityWeather"></p>
+        </div>
+      </div>
+      <div class="card"> 
+        <div class="card-body bg-primary">
+          <h4 class="card-title">Current Temperature</h4>
+          <p class="card-text current"></p>
+        </div>
+      </div> 
+      <div class="card"> 
+        <div class="card-body bg-primary">
+          <h4 class="card-title">Today's High</h4>
+          <p class="card-text high"></p>
+        </div>
+      </div> 
+      <div class="card"> 
+        <div class="card-body bg-primary">
+          <h4 class="card-title">Today's Low</h4>
+          <p class="card-text low"></p>
+        </div>
+      </div> 
+      <div class="card"> 
+        <div class="card-body bg-primary">
+          <h4 class="card-title">Humidity</h4>
+          <p class="card-text humidity"></p>
+        </div>
+      </div> 
+      <div class="card"> 
+        <div class="card-body uvCard">
+          <h4 class="card-title">UV Index</h4>
+          <p class="card-text uvIndex"></p>
+        </div>
+      </div> 
+      <div class="card"> 
+        <div class="card-body bg-primary">
+          <h4 class="card-title">Windspeed</h4>
+          <p class="card-text windspeed"></p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row cols-6">
+        <div class="col">
+          <div class="card"> 
+            <div class="card-body bg-primary">
+              <h4 class="card-title">Monday</h4>
+              <p class="card-text mondayTemp"></p>
+              <p class="card-text mondayHumidity"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card"> 
+            <div class="card-body bg-primary">
+              <h4 class="card-title">Tuesday</h4>
+              <p class="card-text tuesdayTemp"></p>
+              <p class="card-text tuesdayHumidity"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card"> 
+            <div class="card-body bg-primary">
+              <h4 class="card-title">Wednesday</h4>
+              <p class="card-text wednesdayTemp"></p>
+              <p class="card-text wednesdayHumidity"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card"> 
+            <div class="card-body bg-primary">
+              <h4 class="card-title">Thursday</h4>
+              <p class="card-text thursdayTemp"></p>
+              <p class="card-text thursdayHumidity"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card"> 
+            <div class="card-body bg-primary">
+              <h4 class="card-title">Friday</h4>
+              <p class="card-text fridayTemp"></p>
+              <p class="card-text fridayHumidity"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="footer bg-primary mt-5 mb-0 p-5">Thanks for visiting!</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src="./assets/main.js"></script>
+</html>

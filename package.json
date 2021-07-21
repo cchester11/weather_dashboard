@@ -1,0 +1,19 @@
+{
+  "name": "weather_dashboard",
+  "version": "1.0.0",
+  "description": "weatherdashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cchester11/weather_dashboard.git"
+  },
+  "author": "Charles Chester",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cchester11/weather_dashboard/issues"
+  },
+  "homepage": "https://github.com/cchester11/weather_dashboard#readme"
+}
